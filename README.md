@@ -1,7 +1,5 @@
 ### SNXTL Template bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-<hr class="thin-line" style="height: 1px;">
-
 Web development stack that combines several powerful technologies for building robust and efficient web applications focused around streamlining content management and SEO
 
 - [Next.js](https://nextjs.org/)
@@ -11,8 +9,6 @@ Web development stack that combines several powerful technologies for building r
 - [Jest](https://jestjs.io/)
 
 ### Getting Started
-
-<hr class="thin-line" style="height: 1px;">
 
 Install dependencies and run the dev server
 
@@ -25,8 +21,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 ### Configure Sanity Studio
-
-<hr class="thin-line" style="height: 1px;">
 
 Add your Sanity project ID to the `.env`
 
