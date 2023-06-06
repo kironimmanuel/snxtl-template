@@ -1,15 +1,6 @@
 ### SNXTL Template bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-<style>
-.thin-line {
-  height: 1px;
-  background-color: #fff;
-  opacity: 0.15;
-  border: none;
-  margin: 10px 0;
-}
-</style>
-<hr class="thin-line">
+<hr class="thin-line" style="height: 1px;">
 
 Web development stack that combines several powerful technologies for building robust and efficient web applications focused around streamlining content management and SEO
 
@@ -21,7 +12,7 @@ Web development stack that combines several powerful technologies for building r
 
 ### Getting Started
 
-<hr class="thin-line">
+<hr class="thin-line" style="height: 1px;">
 
 Install dependencies and run the dev server
 
@@ -35,7 +26,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 ### Configure Sanity Studio
 
-<hr class="thin-line">
+<hr class="thin-line" style="height: 1px;">
 
 Add your Sanity project ID to the `.env`
 
