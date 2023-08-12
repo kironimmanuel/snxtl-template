@@ -12,10 +12,10 @@ Project template for Web Apps to provide easy and efficient setup for full-stack
 
 Before getting started you will need to create a Sanity.io account and project to retrieve a project ID. You can do so by following the instructions [here](https://www.sanity.io/docs/getting-started-with-sanity-cli).
 
-After that, clone the repository and install dependencies for the root and studio:
+After that, clone the repository and install dependencies running in the root:
 
 ```bash
-pnpm install && cd studio && pnpm install && cd ..
+pnpm i
 ```
 
 Replace the `projectId` in `studio/environment.ts` with your own project ID.

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "cd studio && pnpm install",
     "dev": "concurrently --kill-others-on-fail \"pnpm client\" \"pnpm studio\"",
     "client": "next dev -p 3000",
     "studio": "cd studio && sanity dev",
