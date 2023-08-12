@@ -1,8 +1,6 @@
-import Link from 'next/link';
-
-export default function Home() {
+const Home = () => {
   return (
-    <main className='h-screen w-screen bg-black flex justify-center items-center text-white'>
+    <main className='h-screen bg-black flex justify-center items-center text-white'>
       <div className='w-3/4 text-center'>
         <h1 className='text-6xl font-semibold mb-5'>
           SNXTL Template <span className='animate-pulse'>🔥</span>
@@ -10,10 +8,14 @@ export default function Home() {
         <p className='mb-5 text-2xl'>
           Blending Next.js, Tailwind CSS, TypeScript, and Sanity.
         </p>
-        <Link href='/admin' className='text-red-500 text-2xl'>
+        <a
+          href='http://localhost:3333/desk'
+          className='text-red-500 text-2xl'
+          target='_blank'>
           Jump to your sanity studio 🏃‍♂️
-        </Link>
+        </a>
       </div>
     </main>
   );
-}
+};
+export default Home;

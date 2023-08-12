@@ -1,5 +1,15 @@
+import { SiteSettings } from '@/models/siteSettings';
+import { groq } from 'next-sanity';
 import { Montserrat } from 'next/font/google';
-import '../styles/globals.css';
+import './globals.css';
+import { sanityClient } from './lib/sanity';
+
+const getSiteSettings = async () => {
+  const query = groq`*[_type == "siteSettings"]`;
+  const data = await sanityClient.fetch(query);
+
+  return data[0];
+};
 
 /**
  * @description
@@ -8,22 +18,20 @@ import '../styles/globals.css';
  * https://nextjs.org/docs/advanced-features/custom-document
  *
  */
-
 const montserrat = Montserrat({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'SNXTL Template',
-  description: 'Next.js template with Tailwind CSS, TypeScript and Sanity',
-};
+const RootLayout = async ({ children }: { children: React.ReactNode }) => {
+  const metadata: SiteSettings = await getSiteSettings();
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
   return (
     <html lang='en' suppressHydrationWarning>
+      <head>
+        <title>{metadata.siteTitle}</title>
+        <meta name='description' content={metadata.seo.metaDesc ?? ''} />
+      </head>
       <body className={montserrat.className}>{children}</body>
     </html>
   );
-}
+};
+
+export default RootLayout;

@@ -17,6 +17,6 @@ describe('Home Component', () => {
       name: /Jump to your sanity studio/i,
     });
     expect(linkElement).toBeInTheDocument();
-    expect(linkElement.getAttribute('href')).toBe('/admin');
+    expect(linkElement.getAttribute('href')).toBe('http://localhost:3333/desk');
   });
 });
