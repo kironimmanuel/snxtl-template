@@ -21,7 +21,6 @@ pnpm i
 Replace the `projectId` in `studio/environment.ts` with your own project ID.
 
 ```ts
-// studio/environment.ts
 export const dataset = 'production';
 export const projectId = '<your-project-id>';
 ```
